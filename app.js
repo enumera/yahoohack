@@ -30,7 +30,7 @@ function shuffle(o){ //v1.0
       $scope.flickrPhotosx = [];
       // $scope.flickrPhotoInfo = "";
 
-    $scope.url="https://api.flickr.com/services/rest/?&method=flickr.photos.search&text=" + musicGenre + "%20in%20Norway&sort=recent&format=json&api_key=1c96e35777d1af8b21b80998dfef2216&nojsoncallback=1"
+    $scope.url="https://api.flickr.com/services/rest/?&method=flickr.photos.search&text=" + musicGenre + "%20in%20Kvitavtn&sort=recent&format=json&api_key=1c96e35777d1af8b21b80998dfef2216&nojsoncallback=1"
 
  // console.log($scope.url)
 
