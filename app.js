@@ -15,8 +15,8 @@ function shuffle(o){ //v1.0
     $scope.flickrPhotoUrls = [];
     $scope.flickrPhotosx = [];
     $scope.url = "";
-    // $scope.musicGenre = ['graffita%20art', 'modern%20art', 'contemporary%20art', 'impressionism', 'jazz%20music', 'rock%20music', 'disco%20music', 'clubs', 'fashion', 'pop%20music', 'football', 'sport']
-    $scope.musicGenre = ['skiiing', 'winter%20sport'];
+    $scope.musicGenre = ['graffita%20art', 'modern%20art', 'contemporary%20art', 'impressionism', 'jazz%20music', 'rock%20music', 'disco%20music', 'clubs', 'fashion', 'pop%20music', 'football', 'sport']
+    // $scope.musicGenre = ['skiiing', 'winter%20sport'];
     // $scope.locationWord = "in%20London";
 
    
@@ -30,7 +30,7 @@ function shuffle(o){ //v1.0
       $scope.flickrPhotosx = [];
       // $scope.flickrPhotoInfo = "";
 
-    $scope.url="https://api.flickr.com/services/rest/?&method=flickr.photos.search&text=" + musicGenre + "%20in%20rjukan&sort=recent&format=json&api_key=1c96e35777d1af8b21b80998dfef2216&nojsoncallback=1"
+    $scope.url="https://api.flickr.com/services/rest/?&method=flickr.photos.search&text=" + musicGenre + "%20in%20London&sort=recent&format=json&api_key=1c96e35777d1af8b21b80998dfef2216&nojsoncallback=1"
 
  // console.log($scope.url)
 
