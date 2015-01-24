@@ -149,7 +149,7 @@ var map = null;
 
 
   var mapOptions = {
-    zoom: 1,
+    zoom: 10,
     center: new google.maps.LatLng(37.774546, -122.433523),
     mapTypeId: google.maps.MapTypeId.SATELLITE
   };
