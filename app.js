@@ -20,17 +20,17 @@ function shuffle(o){ //v1.0
     // $scope.locationWord = "in%20London";
 
    
-    console.log($scope.musicGenre)
+    // console.log($scope.musicGenre)
     $scope.getPictures = function(musicGenre){
       // console.log($scope.flickrPhotoInfo  )
       $scope.output = musicGenre
       $scope.flickrPhotos = [];
-    $scope.flickrPhotoIds = [];
-    $scope.flickrPhotoUrls = [];
+      $scope.flickrPhotoIds = [];
+      $scope.flickrPhotoUrls = [];
       $scope.flickrPhotosx = [];
       // $scope.flickrPhotoInfo = "";
 
-    $scope.url="https://api.flickr.com/services/rest/?&method=flickr.photos.search&text=" + musicGenre + "%20in%20London&sort=recent&format=json&api_key=1c96e35777d1af8b21b80998dfef2216&nojsoncallback=1"
+      $scope.url="https://api.flickr.com/services/rest/?&method=flickr.photos.search&text=" + musicGenre + "%20in%20London&sort=recent&format=json&api_key=1c96e35777d1af8b21b80998dfef2216&nojsoncallback=1"
 
  // console.log($scope.url)
 
@@ -45,16 +45,16 @@ function shuffle(o){ //v1.0
             // console.log(data)
             // console.log(results.photo[0])
 
-      results.photo = shuffle(results.photo)
+        results.photo = shuffle(results.photo)
 
 
         for(var i=0; i< 25; i++){
               // console.log(i)
             if(i<25){
-            $scope.flickrPhotos.push(results.photo[i])
-            $scope.getPhotoSize(results.photo[i].id)
+              $scope.flickrPhotos.push(results.photo[i])
+              $scope.getPhotoSize(results.photo[i].id)
             }
-             $scope.flickrPhotoIds.push(results.photo[i].id)
+              $scope.flickrPhotoIds.push(results.photo[i].id)
               $scope.getPhotoInfo(results.photo[i].id)
           }
                console.log("number of photos to show")
@@ -76,9 +76,8 @@ function shuffle(o){ //v1.0
             // console.log(result);
             if(!result==""){
               if($scope.flickrPhotoInfo==""){
-            $scope.flickrPhotoInfo = result;
+              $scope.flickrPhotoInfo = result;
           }else {
-
               $scope.flickrPhotoInfo =  $scope.flickrPhotoInfo + ";" + result;
           }
             // console.log($scope.flickrPhotoInfo)
@@ -116,7 +115,7 @@ function shuffle(o){ //v1.0
 
               $scope.getPictures($scope.stuff);
             }
-      }, 5000)
+      }, 15000)
     };
       $scope.runSlide();
   }]);
