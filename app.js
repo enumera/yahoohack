@@ -48,9 +48,9 @@ function shuffle(o){ //v1.0
         results.photo = shuffle(results.photo)
 
 
-        for(var i=0; i< 25; i++){
+        for(var i=0; i< 10; i++){
               // console.log(i)
-            if(i<25){
+            if(i<10){
               $scope.flickrPhotos.push(results.photo[i])
               $scope.getPhotoSize(results.photo[i].id)
             }
